@@ -1,5 +1,5 @@
 # Movies
-This is my repository for for the movie mini-project.
+This is my repository for the movie mini-project.
 
 # What was completed
 * All required steps: Loading data from a db, computation of top 10 genres, computation of top 10 actors, and unit tests.  
@@ -13,7 +13,7 @@ This is my repository for for the movie mini-project.
 * This should run without any problem for most or all versions of Python 3
 * I ran this with Python 3.7.3
 * No libraries that do not come standard with 3.7.3 were used
-* To run the different calculations/get the results just type (actor/director pair takes a few seconds): python calculations.py 
+* To run the program/get the results just type (actor/director pair takes a few seconds): python calculations.py 
 * To run the unit tests just type: python test.py 
 
 # Note About Shortcuts Taken
