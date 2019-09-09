@@ -105,27 +105,39 @@ def main():
     # create a database connection
     conn = create_connection(database)
     with conn:
-        print("Top 10 Genres:")
+        print("\nTop 10 Genres:")
         cur = conn.cursor()
         cur.execute(
             'SELECT genres, gross, budget FROM movies WHERE (gross IS NOT NULL AND gross != "") AND (budget IS NOT NULL AND budget != "") AND (genres IS NOT NULL AND budget != "")'
         )
         rows = cur.fetchall()
-        print(get_top_genres(rows)[:10])
+        topGenres = get_top_genres(rows)
+        for i in range(0, 10):
+            print(str(topGenres[i][0]) + ": " + str(topGenres[i][1]))
 
         print("\n\nTop 10 Actors:")
         cur.execute(
             'SELECT actor_1_name, actor_2_name, actor_3_name, gross, budget FROM movies WHERE (gross IS NOT NULL AND gross != "") AND (budget IS NOT NULL AND budget != "")'
         )
         rows = cur.fetchall()
-        print(get_top_actors(rows)[:10])
+        topActors = get_top_actors(rows)
+        for i in range(0, 10):
+            print(str(topActors[i][0]) + ": " + str(topActors[i][1]))
 
         print("\n\nTop 10 Director/Actor Pairs:")
         cur.execute(
             "SELECT imdb_score, actor_1_name, actor_2_name, actor_3_name, director_name FROM movies"
         )
         rows = cur.fetchall()
-        print(get_top_actors_director_pairs(rows)[:10])
+        topPairs = get_top_actors_director_pairs(rows)
+        for i in range(0, 10):
+            print(
+                str(topPairs[i][0])
+                + " - "
+                + str(topPairs[i][1])
+                + ": "
+                + str(topPairs[i][2])
+            )
 
         # connect to DB only once
         # pass relative info to each function
