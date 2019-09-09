@@ -17,5 +17,5 @@ This is my repository for for the movie mini-project.
 * To run the unit tests just type: python test.py 
 
 # Note About Shortcuts Taken
-* Do to trying to get this finished quickly, I did not put much into formatting the output
+* Do to trying to get this finished quickly, I did not put much effort into formatting the output
 * Also, do to this not being a part of a larger project, I did not put as much effort into naming/documentation/scalibility/etc as I would normally.  
