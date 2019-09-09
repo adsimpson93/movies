@@ -139,10 +139,6 @@ def main():
                 + str(topPairs[i][2])
             )
 
-        # connect to DB only once
-        # pass relative info to each function
-        # then
-
 
 if __name__ == "__main__":
     main()
