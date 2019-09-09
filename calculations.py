@@ -18,7 +18,7 @@ def create_connection(db_file):
 
 
 def get_top_genres(rows):
-    """Returns List of top genres and average profit in order of least to great"""
+    """Returns List of top genres and average profit in order of greatest to least"""
     genresData = {}
 
     c = 0
@@ -45,6 +45,7 @@ def get_top_genres(rows):
 
 
 def get_top_actors(rows):
+    """Returns List of top actors and average profit in order of greatest to least"""
     actorData = {}
     for row in rows:
         for a in [row[0], row[1], row[2]]:
@@ -69,6 +70,7 @@ def get_top_actors(rows):
 
 
 def get_top_actors_director_pairs(rows):
+    """Returns List of top actors/director and their average imbd scores"""
     directors = {}
 
     for r in rows:
