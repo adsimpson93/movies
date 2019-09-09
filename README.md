@@ -13,8 +13,9 @@ This is my repository for for the movie mini-project.
 * This should run without any problem for most or all versions of Python 3
 * I ran this with Python 3.7.3
 * No libraries that do not come standard with 3.7.3 were used
-* To run the different calculations/get the results just type: python calculations.py 
+* To run the different calculations/get the results just type (actor/director pair takes a few seconds): python calculations.py 
 * To run the unit tests just type: python test.py 
 
 # Note About Shortcuts Taken
-*
+* Do to trying to get this finished quickly, I did not put much effort into formatting the output
+* Also, do to this not being a part of a larger project, I did not put as much effort into naming/documentation/scalibility/etc as I would normally.  
