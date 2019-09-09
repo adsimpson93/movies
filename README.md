@@ -8,3 +8,13 @@ This is my repository for for the movie mini-project.
 # Assumptions
 * Profit of each film was calculated by gross minus budget 
 * I was a little unclear about actor/director pairs. I decided an actor/director pair could be any pair of actor/director that have done 1 or more movies together. For example if a director (D1) has done 3 movies with 3 different actors (A1, A2, A3) and their respective IMBD scores are 98, 87, and 75. Then I would return (D1, A1, 98), (D1, A2, 87), and (D1, A3, 75) in that order if those were the only people/movies in the database.  
+
+# How To Run
+* This should run without any problem for most or all versions of Python 3
+* I ran this with Python 3.7.3
+* No libraries that do not come standard with 3.7.3 were used
+* To run the different calculations/get the results just type: python calculations.py 
+* To run the unit tests just type: python test.py 
+
+# Note About Shortcuts Taken
+*
